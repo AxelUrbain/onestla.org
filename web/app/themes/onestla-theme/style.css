@@ -51,7 +51,8 @@ footer p{
 
 #header-banner{
     background-color: #c62253;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .title-site{
@@ -151,7 +152,6 @@ footer p{
 /* Presentation of blogger */
 
 #pres-blog{
-    background-image: linear-gradient(rgba(31,53,86, 0.75), rgba(31,53,86,0.5)), url('/assets/img/bg-site-header.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,7 +159,7 @@ footer p{
 }
 
 .linear-background {
-    background: linear-gradient(359deg, rgba(71, 168, 189) 35%, transparent 36%);
+    background: linear-gradient(359deg, rgba(198, 34, 83, 1) 35%, transparent 36%);
     height: 70px;
     margin-top: -70px;
 }
@@ -169,11 +169,10 @@ footer p{
 }
 
 .title-page{
-    font-family: 'VeneerThree', sans-serif;
+    font-family: 'ConduitBold', sans-serif;
     margin-top: 82px;
     font-size: 62px;
     font-weight: normal;
-    text-transform: uppercase;
     text-align: center;
 }
 
@@ -184,7 +183,8 @@ footer p{
     box-decoration-break: clone;
     background-color: #c62253;
     padding-bottom: 0px;
-    padding-top: 15px; 
+    padding-top: 20px; 
+    padding-bottom: 15px;
 }
 
 /* padding */

@@ -9,12 +9,12 @@
 <body <?php body_class(); ?>>
 
 <div id="header-banner">
-        <div class="text-center">
+        <div class="container">
             <?php 
                 $custom_logo_id = get_theme_mod( 'custom_logo' );
                 $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
             ?>
-            <img class="mt-3" src="<?php echo $image[0]; ?>" height="150px" width="280px">
+            <img src="<?php echo $image[0]; ?>" height="75px" width="125px">
         </div>
 </div>
 

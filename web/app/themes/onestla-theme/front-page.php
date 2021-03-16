@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="pres-blog">
+<div id="pres-blog" style="background-image: linear-gradient(rgba(31,53,86, 0.75), rgba(31,53,86,0.5)), url(<?php the_post_thumbnail_url(); ?>);" >
     <div class="container">
         <div class="p-60">
             <div class="row">
