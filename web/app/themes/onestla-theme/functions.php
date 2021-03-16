@@ -18,6 +18,7 @@ function onestla_supports()
     register_nav_menu('footer', 'Pied de page');
 
     add_image_size('post-thumbnail', 350, 215, true);
+    add_image_size('post-page-pres', 1920, 1080, true);
 }
 
 add_action('after_setup_theme', 'onestla_supports');

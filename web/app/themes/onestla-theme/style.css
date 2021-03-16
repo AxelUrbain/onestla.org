@@ -178,13 +178,9 @@ footer p{
 
 .title-page mark {
     color: #FFFFFF;
-    padding: 0 0.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     background-color: #c62253;
-    padding-bottom: 0px;
-    padding-top: 20px; 
-    padding-bottom: 15px;
 }
 
 /* padding */
