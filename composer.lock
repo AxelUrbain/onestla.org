@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f32491e1ab7eb74d79d1d8e58c5c6993",
+    "content-hash": "b284d1ba90565dce93b4194957eb8cb3",
     "packages": [
         {
             "name": "composer/installers",
@@ -801,6 +801,24 @@
                 "environment"
             ],
             "time": "2021-01-20T15:23:13+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wp-migrate-db",
+            "version": "1.0.17",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-migrate-db/",
+                "reference": "tags/1.0.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.1.0.17.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-migrate-db/"
         }
     ],
     "packages-dev": [
