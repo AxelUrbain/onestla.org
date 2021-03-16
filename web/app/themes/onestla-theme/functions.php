@@ -5,6 +5,15 @@ function onestla_supports()
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_theme_support('menus');
+
+    add_theme_support( 'custom-logo', array(
+        'height'      => 150,
+        'width'       => 350,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    ) );
+
     register_nav_menu('header', 'En tête du menu');
     register_nav_menu('footer', 'Pied de page');
 
@@ -110,6 +119,7 @@ function add_acf_signataire_columns($columns){
 		'email' => 'Mail',
 		'telephone_portable' => 'Telephone portable',
 		'postalcode' => 'Code postal',
+        'rgpd_field' => 'RGPD'
 	);
 
 	return $columns;
@@ -137,6 +147,9 @@ function signataire_custom_column( $column, $post_id ) {
 	  case 'postalcode':
 		echo get_post_meta ( $post_id, 'postalcode', true );			
 		break;
+      case 'rgpd_field':
+        echo get_post_meta($post_id, 'rgpd_field', true);
+        break;
 	}
  }
  add_action ( 'manage_signataire_posts_custom_column', 'signataire_custom_column', 10, 2 );
@@ -189,7 +202,7 @@ function func_export_all_signataires() {
   
             $file = fopen('php://output', 'w');
   
-			fputcsv($file, array('Nom', 'Prenom', 'Email', 'Telephone portable', 'Code postal'));
+			fputcsv($file, array('Nom', 'Prenom', 'Email', 'Telephone portable', 'Code postal', 'RGPD'));
 										
             foreach ($arr_post as $post) {
                 setup_postdata($post);
@@ -222,7 +235,9 @@ add_action( 'init', 'func_export_all_signataires' );
 function treatment_form_add_signature() {
 
 	if (isset($_POST['signature-send'])){
-        if(!empty($_POST['name']) && !empty($_POST['firstname']) && !empty($_POST['email']) && !empty($_POST['postalcode'])){
+        if(!empty(htmlspecialchars($_POST['name'])) && !empty(htmlspecialchars($_POST['firstname'])) 
+        && !empty( htmlspecialchars($_POST['email'])) && !empty(htmlspecialchars($_POST['postalcode']))
+        && htmlspecialchars($_POST['rgpd_field']) == true){
             //verifier si l'adresse mail est déjà utilisée
             $email = $_POST['email'];
 
@@ -254,6 +269,7 @@ function treatment_form_add_signature() {
                 update_post_meta($cpt_id, 'email', $_POST['email']);
                 update_post_meta($cpt_id, 'telephone_portable', $_POST['portable']);
                 update_post_meta($cpt_id, 'postalcode', $_POST['postalcode']);
+                update_post_meta($cpt_id, 'rgpd_field', $_POST['rgpd_field']);
 
                 $variable_to_send = '1';
                 wp_redirect(home_url().'?success_signature='.$variable_to_send);

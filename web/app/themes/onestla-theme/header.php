@@ -10,21 +10,12 @@
 
 <div id="header-banner">
         <div class="text-center">
-            <h1 class="title-site">
-                <?= get_bloginfo('name'); ?> <span> !</span>
-            </h1>
-            <h2 class="subtitle-site">
-                <mark><?= get_bloginfo('description'); ?></mark>
-            </h2>
+            <?php 
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+            ?>
+            <img class="mt-3" src="<?php echo $image[0]; ?>" height="150px" width="280px">
         </div>
 </div>
-
-<?php 
-wp_nav_menu([
-    'theme_location' => 'header',
-    'container' => false,
-    'menu_class' => 'navbar-nav mr-auto'
- ]);
-?>
 
 <?php wp_body_open(); ?>

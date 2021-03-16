@@ -1,5 +1,19 @@
 <?php get_header(); ?>
 
+<div id="pres-blog">
+    <div class="container">
+        <div class="p-60">
+            <div class="row">
+                <h2 class="text-left title-page">
+                    <mark><?php echo the_title(); ?></mark>
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="linear-background"></div>
+
 <div class="container">
     <div class="content-front-page">
 
@@ -20,10 +34,6 @@
                 Merci, votre signature a été prise en compte !
             </div>
         <?php endif; ?>
-
-        <h2 class="title-page">
-            <mark><?php echo the_title(); ?></mark>
-        </h2>
 
         <div class="page-content-text">
             <?= the_content(); ?>
@@ -56,6 +66,10 @@
                     <div class="col-md-6">
                         <input class="form-control" name="postalcode" type="text" placeholder="Code postal" pattern="[0-9]{5}" required>
                     </div>
+                </div>
+
+                <div class="row mt-3">
+                    <label class="label-checkbox-signature"> <input  class="increase" type="checkbox" name="rgpd_field" required> J'accepte que mes informations soient traitées pour le soutien de la campagne régionale de la liste "On est là !", conformément à la <a href="">politique de conservation de données</a>.</label>
                 </div>
 
                 <div class="row">
