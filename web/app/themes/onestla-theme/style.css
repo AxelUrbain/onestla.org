@@ -39,6 +39,21 @@ body{
     padding: 0;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.nav-link{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'ConduitMedium', sans-serif;
+}
+
+.nav-link:hover{
+    color: #ffffff;
+}
+
 footer{
     background-color:  #c62253;
 }
@@ -167,7 +182,7 @@ footer p{
     color: #FFFFFF;
 }
 
-.increase {
+.increase{
     width:15px;
     height:15px;
 }
@@ -178,7 +193,7 @@ footer p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 600px;
 }
 
 .linear-background {

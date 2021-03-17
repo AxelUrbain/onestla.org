@@ -158,7 +158,6 @@ function signataire_custom_column( $column, $post_id ) {
  /*
  * Add admin Sortable columns POST TYPE : Signataire
  */
-
 function my_column_register_sortable( $columns ) {
 	$columns['prenom'] = 'prenom';
 	$columns['nom'] = 'nom';

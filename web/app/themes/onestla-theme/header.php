@@ -10,24 +10,35 @@
 
 <div id="pres-blog" style="background-image:url(<?php the_post_thumbnail_url('post-page-pres'); ?>);">
     <div id="header-banner">
-        <div class="container">
-          <?php 
-                $custom_logo_id = get_theme_mod( 'custom_logo' );
-                $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-            ?>  
-            <div class="row">
-                <a href="<?php echo get_home_url(); ?>">
-                    <img src="<?php echo $image[0]; ?>" height="115px" width="200px">
-                </a>
-                <div class="ml-auto">
-                    <div class="menu-align">
-                       <a class="btn-join" href="#join-campagne">Faire campagne</a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <?php 
+                    $custom_logo_id = get_theme_mod( 'custom_logo' );
+                    $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                ?>  
+
+                    <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
+                        <img src="<?php echo $image[0]; ?>" height="115px" width="200px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                        <?php              
+                            wp_nav_menu([
+                                'theme_location' => 'header',
+                                'container' => false,
+                                'menu_class' => 'navbar-nav ml-auto'
+                            ])
+                        ?>
+
+                        <a class="btn-join" href="#join-campagne">Faire campagne</a>
                     </div>
-                </div>
+
             </div>
-            <div class="row">
-                <p id="banner-rss">Élections régionales - Juin 2021</p>
-            </div>
+        </nav>
+        <div class="container">
+            <p id="banner-rss">Élections régionales - Juin 2021</p>
         </div>
     </div>
 
