@@ -49,10 +49,33 @@ footer p{
     padding: 20px 0 20px 0;
 }
 
-#header-banner{
+#banner-rss{
+    color: #FFFFFF;
+    font-family: 'ConduitMedium', sans-serif;
+    font-size: 24px;
+    padding-left: 5px;
+}
+
+.menu-align{
+    margin-top: 20px;
+}
+
+.btn-join{
+    font-family: 'ConduitMedium', sans-serif;
+    font-size: 20px;
     background-color: #c62253;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    color: #FFFFFF;
+    padding: 1.2rem 2rem;
+}
+
+.btn-join:hover{
+    color: #FFFFFF;
+}
+
+#header-banner{
+    background-color: transparent;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .title-site{
@@ -96,7 +119,7 @@ footer p{
 
 .title-signature-section{
     color: #FFFFFF;
-    font-family: 'VeneerThree', sans-serif;
+    font-family: 'ConduitBold', sans-serif;
     font-size: 42px;
     margin: 0;
     text-align: center;
@@ -155,11 +178,11 @@ footer p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: auto;
 }
 
 .linear-background {
-    background: linear-gradient(359deg, rgba(198, 34, 83, 1) 35%, transparent 36%);
+    background: linear-gradient(359deg, rgb(161,208,118) 35%, transparent 36%);
     height: 70px;
     margin-top: -70px;
 }
@@ -171,6 +194,7 @@ footer p{
 .title-page{
     font-family: 'ConduitBold', sans-serif;
     margin-top: 82px;
+    margin-bottom: 120px;
     font-size: 62px;
     font-weight: normal;
     text-align: center;
