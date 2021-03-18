@@ -39,6 +39,30 @@ body{
     padding: 0;
 }
 
+/**
+MENU
+**/
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("img/hamburger.svg");
+  }
+  
+.custom-toggler.navbar-toggler {
+    padding: 0;
+    font-size: 2.25rem;
+    line-height: 0;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    transition: box-shadow .15s ease-in-out;
+} 
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 0.5rem;
@@ -46,12 +70,20 @@ body{
 
 .nav-link{
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'ConduitMedium', sans-serif;
 }
 
 .nav-link:hover{
     color: #ffffff;
+}
+
+.collapse.show{
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    background-color: transparent;
+    height: auto;
 }
 
 footer{
@@ -81,6 +113,7 @@ footer p{
     background-color: #c62253;
     color: #FFFFFF;
     padding: 1.2rem 2rem;
+    margin-right: 15px;
 }
 
 .btn-join:hover{
@@ -193,7 +226,7 @@ footer p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: auto;
 }
 
 .linear-background {
@@ -208,8 +241,6 @@ footer p{
 
 .title-page{
     font-family: 'ConduitBold', sans-serif;
-    margin-top: 82px;
-    margin-bottom: 120px;
     font-size: 62px;
     font-weight: normal;
     text-align: center;
@@ -225,11 +256,19 @@ footer p{
 /* padding */
 
 .p-60{
-    padding: 0px 60px;
+    padding: 100px 60px;
 }
 
 @media only screen and (max-width: 914px) {
     /* For tablets: */
+    .nav-btn-mobile{
+        margin-top: 25px;
+    }
+
+    .li-btn-mobile{
+        margin-top: 50px;
+    }
+
     .content-front-page {
         padding: 40px 20px 0 20px;
     }

@@ -3,7 +3,6 @@ web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
 web/app/upgrade
-web/app/uploads/*
 !web/app/uploads/.gitkeep
 
 # WordPress
@@ -14,7 +13,6 @@ web/.htaccess
 *.log
 
 # Dotenv
-.env
 .env.*
 !.env.example
 
