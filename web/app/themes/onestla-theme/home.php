@@ -46,7 +46,7 @@
         <div class="p-60">
             <div class="row">
                 <h2 class="text-left title-page">
-                    <mark>Oupss erreur 404 : la page est introuvable !</mark>
+                    <mark>Actualités</mark>
                 </h2>
             </div>
         </div>
@@ -55,6 +55,33 @@
 
 <div class="linear-background"></div>
 
+<div id="articles">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="img_preview_cont"  style="background-image:url({{ vich_uploader_asset(last_article, 'imageFile') }})"></div>
+            </div>
+            <div class="col-lg-6 col-md-12 pl-20">
+                <div class="row pt-2">
+                    <div class="col-3">
+                        <a href="{{ path('category_page', {'id': last_article.category.id ,'category_name': last_article.category }) }}" class="badge">{{ last_article.category }}</a>
+                    </div>
+                    <div class="col-9">
+                        <span class="badge date span-date">{{ last_article.PublishDate|format_datetime(locale='fr',pattern="dd MMMM YYYY")}}</span>
+                    </div>
+                </div>
+                <h2 class="title-article">
+                    <a href="{{ path('article', {'id': last_article.id ,'title': last_article.title|replace({' ': '-'}) }) }}">
+                        {{ last_article.title|replace({'-': ' '})  }}
+                    </a>
+                </h2>
+                <div class="desc-article">
+                    {{ last_article.body|striptags|replace({'&nbsp;': '', '&agrave;': '', '&eacute;': 'é', '&rsquo;': "'", '&egrave;': 'è'})|slice(0,120) ~ '...' }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php wp_body_open(); ?>
 

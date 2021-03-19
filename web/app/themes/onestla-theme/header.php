@@ -34,9 +34,6 @@
                         ?>
                         <ul class="navbar-nav nav-btn-mobile">
                             <li class="nav-item">
-                                <a class="btn-join" href="#join-campagne">Ma procuration</a>
-                            </li>
-                            <li class="nav-item li-btn-mobile">
                                 <a class="btn-join" href="#join-campagne">Faire campagne</a>
                             </li>
                         </ul>
