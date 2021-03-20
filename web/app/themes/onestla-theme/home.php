@@ -59,24 +59,52 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <div class="img_preview_cont"  style="background-image:url({{ vich_uploader_asset(last_article, 'imageFile') }})"></div>
+                <div class="img_preview_cont"  style="background-color:#000"></div>
             </div>
             <div class="col-lg-6 col-md-12 pl-20">
                 <div class="row pt-2">
                     <div class="col-3">
-                        <a href="{{ path('category_page', {'id': last_article.category.id ,'category_name': last_article.category }) }}" class="badge">{{ last_article.category }}</a>
+                        <a href="" class="badge">categorie</a>
                     </div>
                     <div class="col-9">
-                        <span class="badge date span-date">{{ last_article.PublishDate|format_datetime(locale='fr',pattern="dd MMMM YYYY")}}</span>
+                        <span class="badge date span-date">03 Janvier 2021</span>
                     </div>
                 </div>
                 <h2 class="title-article">
-                    <a href="{{ path('article', {'id': last_article.id ,'title': last_article.title|replace({' ': '-'}) }) }}">
-                        {{ last_article.title|replace({'-': ' '})  }}
+                    <a href="">
+                        Titre de l'article
                     </a>
                 </h2>
                 <div class="desc-article">
-                    {{ last_article.body|striptags|replace({'&nbsp;': '', '&agrave;': '', '&eacute;': 'é', '&rsquo;': "'", '&egrave;': 'è'})|slice(0,120) ~ '...' }}
+                    Content extrait...
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-article">
+                    <div class="row">
+                        <div class="pl-20">
+                            <div class="row pt-2">
+                                <div class="col-3">
+                                <a href="" class="badge">Catégorie</a>
+                                </div>
+                                <div class="col-9">
+                                    <span class="badge date span-date">05 Janvier 2020</span>
+                                </div>
+                            </div>
+                            <h2 class="title-article">
+                                <a href="">
+                                    Titre de l'article
+                                </a>
+                            </h2>
+                            <div class="desc-article">
+                                Extrait de l'article
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
