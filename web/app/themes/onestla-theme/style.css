@@ -31,7 +31,7 @@
 
 
 body{
-    background-color: #F5F5F5;
+    background-color: #fff;
     font-family: 'Conduit', sans-serif;
 }
 
@@ -160,6 +160,10 @@ footer p{
 
 .content-front-page{
     padding: 40px 60px 0 60px;
+}
+
+.content-article-page{
+    padding: 0px 60px;
 }
 
 .page-content-text{
@@ -410,7 +414,7 @@ footer p{
 
 .title-article-page{
     color: #1f3556;
-    font-weight: 900;
+    font-family: 'ConduitBold', sans-serif;
     font-size: 42px;
     text-transform: uppercase;
     text-align: left;
@@ -454,7 +458,7 @@ footer p{
 }
 
 #content-article p{
-    font-size: 1.125rem;
+    font-size: 22px;
     text-align: justify;
 }
 
@@ -480,5 +484,32 @@ footer p{
         background-color: #c62253;
         color: #FFFFFF;
         text-align: center;
+    }
+
+    #card-billet{
+        height: auto;
+    }
+
+    .img-article-highlighted{
+        margin-top: -300px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #article{
+        margin-top: 20px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .card-article{
+        margin-top: 4em;
+        padding: 0;
+        height: auto;
+    }
+
+    .card-article img{
+        margin-left: 20px;
+        margin-top: -20px;
     }
   }

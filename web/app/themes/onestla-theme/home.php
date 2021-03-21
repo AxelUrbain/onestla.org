@@ -58,74 +58,53 @@
     <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <div id="articles">
         <div class="container">
-            <div class="row">
-                    <div class="col-lg-4">
-                        <div class="img_preview_cont"  style="background-image:url(<?php the_post_thumbnail_url('post-page-pres'); ?>);"></div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 pl-20">
-                        <div class="row pt-2">
-                            <div class="col-3">
-                            <?php
-                            $categories = get_the_category();
-    
-                            if (!empty($categories)):
-                            ?>
-                                <a href="" class="badge">
-                                    <?php echo $categories[0]->name; ?>
-                                </a>
-
-                            <?php endif; ?>
-                            </div>
-                            <div class="col-9">
-                                <span class="badge date span-date">03 Janvier 2021</span>
-                            </div>
-                        </div>
-                        <h2 class="title-article">
-                            <a href="">
-                                <?php the_title(); ?>
-                            </a>
-                        </h2>
-                        <div class="desc-article">
-                            <?php the_excerpt(); ?>
-                        </div>
-                    </div>
-            </div>
-        </div>   
-    <?php endwhile; else: ?>
-        <p>Aucun article :(</p>
-    </div>
-    <?php endif; ?>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
+            <div class="content-article-page">
                 <div class="card-article">
                     <div class="row">
-                        <div class="pl-20">
+                        <div class="col-lg-4">
+                            <div class="img_preview_cont"  style="background-image:url(<?php the_post_thumbnail_url('post-page-pres'); ?>);"></div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 pl-20">
                             <div class="row pt-2">
                                 <div class="col-3">
-                                <a href="" class="badge">Catégorie</a>
+                                <?php
+                                $categories = get_the_category();
+        
+                                if (!empty($categories)):
+                                ?>
+                                    <a href="" class="badge">
+                                        <?php echo $categories[0]->name; ?>
+                                    </a>
+
+                                <?php endif; ?>
                                 </div>
                                 <div class="col-9">
-                                    <span class="badge date span-date">05 Janvier 2020</span>
+                                    <span class="badge date span-date"><?php the_date(); ?></span>
                                 </div>
                             </div>
                             <h2 class="title-article">
-                                <a href="">
-                                    Titre de l'article
+                                <a href="<?php the_permalink() ?>">
+                                    <?php the_title(); ?>
                                 </a>
                             </h2>
                             <div class="desc-article">
-                                Extrait de l'article
-                        </div>
+                                <?php the_excerpt(); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    <?php endwhile;?>
+        <?= paginate_links(); ?>
+    <?php else: ?>
+        <p>Aucun article :(</p>
     </div>
+    <?php endif; ?>
 </div>
 
 <?php wp_body_open(); ?>
 
-<?php get_footer(); ?>
+<div class="mt-5">
+    <?php get_footer(); ?>
+</div>
