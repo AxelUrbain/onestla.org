@@ -49,7 +49,10 @@
         <div class="p-actu-page">
             <div class="row">
                 <h2 class="text-left title-page">
-                    <mark>Actualités</mark>
+                    <?php 
+                        $category = get_the_category();
+                    ?>
+                    <mark><?= $category[0]->name; ?></mark>
                 </h2>
             </div>
         </div>
