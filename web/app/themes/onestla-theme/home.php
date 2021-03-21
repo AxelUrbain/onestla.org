@@ -81,7 +81,7 @@
                                 <?php endif; ?>
                                 </div>
                                 <div class="col-9">
-                                    <span class="badge date span-date"><?php the_date(); ?></span>
+                                    <span class="badge date span-date"><?= get_the_date(); ?></span>
                                 </div>
                             </div>
                             <h2 class="title-article">

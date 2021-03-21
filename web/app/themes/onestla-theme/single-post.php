@@ -61,13 +61,17 @@
 <div id="article">
     <h2 class="title-article-page"><?php the_title(); ?></h2>
     <div class="article-info">
-        <?php if (!empty($categories)): ?>
-            <a href="" class="badge-article">
-                <?php echo $categories[0]->name; ?>
+        <?php $categories = get_the_category(); ?>
+        <?php if (!empty($categories)): 
+               $category_id = get_cat_ID($categories[0]->name);
+               $category_link = get_category_link( $category_id );
+            ?>
+            <a href="<?= esc_url($category_link) ?>" class="badge-article">
+                <?= $categories[0]->name; ?>
             </a>
         <?php endif; ?>
         <span class="date date-article span-date">
-            <?php the_date(); ?>
+            <?= get_the_date(); ?>
         </span>
     </div>
 
