@@ -96,7 +96,11 @@
             </div>
         </div>
     <?php endwhile;?>
-        <?= paginate_links(); ?>
+        <div class="container">
+            <div class="content-article-page">
+                <?= onestla_pagination(); ?>
+            </div>
+        </div>
     <?php else: ?>
         <p>Aucun article :(</p>
     </div>

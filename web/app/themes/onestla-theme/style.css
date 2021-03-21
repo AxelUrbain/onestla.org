@@ -462,6 +462,41 @@ footer p{
     text-align: justify;
 }
 
+/*
+Paginate style
+*/
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    border-color: #c62253;
+    background-color: #c62253;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    color: #c62253;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.page-link:hover{
+    color: #c62253;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+}
+
 @media only screen and (max-width: 992px) {
     /* For tablets: */
     .nav-btn-mobile{

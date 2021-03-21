@@ -60,6 +60,30 @@ function onestla_menu_link_class($attrs)
 add_filter('nav_menu_css_class', 'onestla_menu_class');
 add_filter('nav_menu_link_attributes', 'onestla_menu_link_class');
 
+/**
+ * Pagination article
+ */
+function onestla_pagination()
+{
+    $pages = paginate_links(['type' => 'array']);
+    if ($pages === null) {
+        return;
+    }
+    echo '<nav aria-label="Pagination" class="my-4">';
+    echo '<ul class="pagination justify-content-end">';
+    foreach ($pages as $page) {
+        $active = strpos($page, 'current') !== false;
+        $class = 'page-item';
+        if ($active) {
+            $class .= ' active';
+        }
+        echo '<li class="' . $class . '">';
+        echo str_replace('page-numbers', 'page-link', $page);
+        echo '</li>';
+    }
+    echo '</ul>';
+    echo '</nav>';
+}
 
 /**
  * Signataire CPT
