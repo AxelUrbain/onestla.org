@@ -4,6 +4,7 @@
 * Description: Theme de la liste on est là ! (LFI/NPA/Ensemble !) aux élections régionales de 2021 
 * Version: 1.0
 **/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
 
 @font-face {
     font-family: 'VeneerThree';
@@ -94,16 +95,6 @@ MENU
     height: auto;
 }
 
-footer{
-    background-color:  #c62253;
-}
-
-footer p{
-    color: #FFFFFF;
-    margin: 0;
-    padding: 20px 0 20px 0;
-}
-
 #banner-rss{
     color: #FFFFFF;
     font-family: 'ConduitMedium', sans-serif;
@@ -118,7 +109,7 @@ footer p{
 .btn-join{
     font-family: 'ConduitMedium', sans-serif;
     font-size: 20px;
-    background-color: #c62253;
+    background-color: rgb(161,208,118);
     color: #FFFFFF;
     padding: 1.2rem 2rem;
     margin-right: 15px;
@@ -209,12 +200,12 @@ footer p{
 #form-signature .btn{
     padding: .75rem 3rem;
     font-family: 'ConduitMedium', sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     width: 100%;
 }
 
 #form-signature .btn-primary{
-    background-color: rgb(87, 26, 255);
+    background-color: rgb(161,208,118);
     border-color: #FFFFFF;
 }
 
@@ -242,9 +233,19 @@ footer p{
 }
 
 .linear-background {
-    background: linear-gradient(359deg, rgb(161,208,118) 35%, transparent 36%);
-    height: 70px;
-    margin-top: -70px;
+    background: linear-gradient(355deg, rgb(161,208,118) 0%, transparent 80%);
+    height: 470px;
+    margin-top: -470px;
+}
+
+#img-soutient{
+    content: "";
+    position:relative;
+    top: 375px;
+    float: right;
+    width: 250px;
+    height: 100px; 
+    background: url("img/logos-partis.svg") no-repeat;
 }
 
 .text-left {
@@ -505,6 +506,39 @@ Paginate style
     border-bottom-left-radius: 0rem;
 }
 
+/*
+Footer
+*/
+
+
+footer{
+    background-color:  #c62253;
+}
+
+footer p{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 20px 0 20px 0;
+}
+
+#footer-logo{
+    background-image: url("img/logo-footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: left;
+    height: 200px;
+}
+
+
+.footer-padding{
+    padding-top: 75px;
+}
+
+.footer-padding-rss{
+    padding-top: 83px;
+}
+
 @media only screen and (max-width: 992px) {
     /* For tablets: */
     .nav-btn-mobile{
@@ -554,5 +588,23 @@ Paginate style
     .card-article img{
         margin-left: 20px;
         margin-top: -20px;
+    }
+
+    footer .navbar{
+        position: relative;
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    footer .footer-padding{
+        padding-top: 20px;
+    }
+
+    footer .footer-padding-rss{
+        padding-top: 20px;
     }
   }

@@ -43,7 +43,6 @@
     </div>
 </div>
 
-<div class="linear-background"></div>
 
 <div class="container">
         <div class="p-actu-page">

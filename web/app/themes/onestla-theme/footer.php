@@ -18,7 +18,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <input class="form-control" name="portable" type="tel" pattern="\d{10}|\+33\d{9}|\+33\s\d{1}\s\d{2}\s\d{2}\s\d{2}\s\d{2}|\d{2}\s\d{2}\s\d{2}\s\d{2}\s\d{2}" placeholder="Téléphone portable (facultatif)">
+                        <input class="form-control" name="portable" type="tel" pattern="\d{10}|\+33\d{9}|\+33\s\d{1}\s\d{2}\s\d{2}\s\d{2}\s\d{2}|\d{2}\s\d{2}\s\d{2}\s\d{2}\s\d{2}" placeholder="Téléphone portable (allez viens, on est bien)">
                     </div>
                     <div class="col-md-6">
                         <input class="form-control" name="postalcode" type="text" placeholder="Code postal" pattern="[0-9]{5}" required>
@@ -39,8 +39,63 @@
     </div>
 </div>
 
-<footer>
+
+<footer class="text-white">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <div id="footer-logo"></div>
+        </div>
+        <div class="col-md-4 footer-padding">
+            <nav class="navbar navbar-expand-lg">
+                <?php              
+                                wp_nav_menu([
+                                    'theme_location' => 'footer',
+                                    'container' => false,
+                                    'menu_class' => 'navbar-nav text-center'
+                                ])
+                            ?>
+            </nav>
+        
+        </div>
+        <div class="col-md-4 footer-padding-rss">
+            <section class="text-center">
+                <!-- Facebook -->
+                <a
+                    class="btn btn-link btn-floating btn-lg text-white"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="white"
+                    ><i class="bi bi-facebook"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                    class="btn btn-link btn-floating btn-lg text-white"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="white"
+                    ><i class="bi bi-twitter"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                    class="btn btn-link btn-floating btn-lg text-white"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="white"
+                    ><i class="bi bi-instagram"></i
+                ></a>
+            </section>
+        </div>
+    </div>
+  </div>
+
+  <!-- Grid container -->
+  <div class="container">
     <p class="text-center">Tous droits réservés - onestla.org</p>
+  </div>
+
 </footer>
 
 </body>
