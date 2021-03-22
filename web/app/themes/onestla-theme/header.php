@@ -34,7 +34,8 @@
                         ?>
                         <ul class="navbar-nav nav-btn-mobile">
                             <li class="nav-item">
-                                <a class="btn-join" href="#join-campagne">Faire campagne</a>
+                                <a class="btn-join" href="#join-campagne">
+                                <?php if(is_front_page()):?>Je signe<?php else: ?>Je participe<?php endif; ?></a>
                             </li>
                         </ul>
                     </div>

@@ -19,7 +19,7 @@
 
                     <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
                         <img src="<?php echo $image[0]; ?>" height="135px" width="250px">
-                        <p id="banner-rss">Élections régionales - Juin 2021</p>
+                        <p id="banner-rss">Élections régionales - 13 & 20 Juin 2021</p>
                     </a>
                     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
                         ?>
                         <ul class="navbar-nav nav-btn-mobile">
                             <li class="nav-item">
-                                <a class="btn-join" href="#join-campagne">Faire campagne</a>
+                                <a class="btn-join" href="#join-campagne">Je participe</a>
                             </li>
                         </ul>
                     </div>

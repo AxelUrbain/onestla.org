@@ -146,6 +146,7 @@ function add_acf_signataire_columns($columns){
 		'email' => 'Mail',
 		'telephone_portable' => 'Telephone portable',
 		'postalcode' => 'Code postal',
+        'activist_field' => 'Militant',
         'rgpd_field' => 'RGPD'
 	);
 
@@ -174,6 +175,9 @@ function signataire_custom_column( $column, $post_id ) {
 	  case 'postalcode':
 		echo get_post_meta ( $post_id, 'postalcode', true );			
 		break;
+      case 'activist_field':
+        echo get_post_meta ( $post_id, 'activist_field', true);
+        break;
       case 'rgpd_field':
         echo get_post_meta($post_id, 'rgpd_field', true);
         break;
@@ -188,6 +192,7 @@ function my_column_register_sortable( $columns ) {
 	$columns['prenom'] = 'prenom';
 	$columns['nom'] = 'nom';
 	$columns['email'] = 'email';
+    $columns['activist_field'] = 'activist_field';
 	return $columns;
 }
 add_filter('manage_edit-signataire_sortable_columns', 'my_column_register_sortable' );
@@ -228,7 +233,7 @@ function func_export_all_signataires() {
   
             $file = fopen('php://output', 'w');
   
-			fputcsv($file, array('Nom', 'Prenom', 'Email', 'Telephone portable', 'Code postal', 'RGPD'));
+			fputcsv($file, array('Nom', 'Prenom', 'Email', 'Telephone portable', 'Code postal', 'Militant','RGPD'));
 										
             foreach ($arr_post as $post) {
                 setup_postdata($post);
@@ -295,6 +300,7 @@ function treatment_form_add_signature() {
                 update_post_meta($cpt_id, 'email', $_POST['email']);
                 update_post_meta($cpt_id, 'telephone_portable', $_POST['portable']);
                 update_post_meta($cpt_id, 'postalcode', $_POST['postalcode']);
+                update_post_meta($cpt_id, 'activist_field', $_POST['activist_field']);
                 update_post_meta($cpt_id, 'rgpd_field', $_POST['rgpd_field']);
 
                 $variable_to_send = '1';

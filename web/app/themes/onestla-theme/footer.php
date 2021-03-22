@@ -1,6 +1,10 @@
 <div id="join-campagne" class="card-signature">
     <div class="container">
-        <h2 class="title-signature-section">Rejoignez l'équipe de campagne</h2>
+        <?php if(is_front_page()): ?>
+            <h2 class="title-signature-section">Signez l'appel</h2>
+        <?php else: ?>
+            <h2 class="title-signature-section">Participez à la campagne</h2>
+        <?php endif; ?>
         <p class="number-signature">Nous sommes déjà <?= wp_count_posts('signataire')->publish + 1240; ?> à soutenir la liste</p>
 
         <div id="form-signature">
@@ -26,12 +30,16 @@
                 </div>
 
                 <div class="row mt-3">
+                    <label class="label-checkbox-signature"> <input  class="increase" type="checkbox" name="activist_field"> Je veux participer activement à la campagne</label>
+                </div>
+
+                <div class="row mt-3">
                     <label class="label-checkbox-signature"> <input  class="increase" type="checkbox" name="rgpd_field" required> J'accepte que mes informations soient traitées pour le soutien de la campagne régionale de la liste "On est là !", conformément à la <a href="">politique de conservation de données</a>.</label>
                 </div>
 
                 <div class="row">
                     <button type="submit" name="signature-send" class="btn btn-primary mt-3">
-                        <span>Rejoignez-nous !</span>
+                        <span>Rejoignez-nous</span>
                     </button>
                 </div>
             </form>
