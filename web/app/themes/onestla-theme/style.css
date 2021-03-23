@@ -238,14 +238,14 @@ MENU
     margin-top: -470px;
 }
 
-#img-soutient{
+#img-soutiens{
     content: "";
     position:relative;
-    top: 375px;
+    top: 330px;
     float: right;
-    width: 250px;
-    height: 100px; 
-    background: url("img/logos-partis.svg") no-repeat;
+    width: 370px;
+    height: 118px; 
+    background: url("img/logo-soutiens-banner.svg") no-repeat;
 }
 
 .text-left {

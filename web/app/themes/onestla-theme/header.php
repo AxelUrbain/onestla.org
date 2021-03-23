@@ -55,8 +55,7 @@
 </div>
 
 <div class="linear-background">
-    <div id="img-soutient">
-
+    <div id="img-soutiens">
     </div>
 </div>
 

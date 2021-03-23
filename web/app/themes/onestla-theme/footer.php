@@ -39,7 +39,7 @@
 
                 <div class="row">
                     <button type="submit" name="signature-send" class="btn btn-primary mt-3">
-                        <span>Rejoignez-nous</span>
+                        <span>Signez l'appel</span>
                     </button>
                 </div>
             </form>
