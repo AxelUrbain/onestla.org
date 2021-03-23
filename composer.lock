@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b284d1ba90565dce93b4194957eb8cb3",
+    "content-hash": "8715415121fa5cbbc1f22fa2cd781739",
     "packages": [
         {
             "name": "composer/installers",
@@ -801,6 +801,24 @@
                 "environment"
             ],
             "time": "2021-01-20T15:23:13+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/accesspress-social-share",
+            "version": "4.5.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/accesspress-social-share/",
+                "reference": "tags/4.5.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/accesspress-social-share.4.5.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/accesspress-social-share/"
         },
         {
             "name": "wpackagist-plugin/wp-migrate-db",

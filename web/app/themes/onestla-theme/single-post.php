@@ -77,6 +77,7 @@
 
     <div id="content-article">
         <p> <?php the_content(); ?> </p>
+        <?php add_shortcode('apss-share', ''); ?>
     </div>
 </div>
 
