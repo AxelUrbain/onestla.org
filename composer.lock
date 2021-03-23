@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8715415121fa5cbbc1f22fa2cd781739",
+    "content-hash": "b05e92e1a2fc31822004b6fe4cbdc183",
     "packages": [
         {
             "name": "composer/installers",
@@ -821,6 +821,24 @@
             "homepage": "https://wordpress.org/plugins/accesspress-social-share/"
         },
         {
+            "name": "wpackagist-plugin/cookie-notice",
+            "version": "2.0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/cookie-notice/",
+                "reference": "tags/2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.2.0.3.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cookie-notice/"
+        },
+        {
             "name": "wpackagist-plugin/wp-migrate-db",
             "version": "1.0.17",
             "source": {
@@ -837,6 +855,113 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-migrate-db/"
+        },
+        {
+            "name": "yoast/i18n-module",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/i18n-module.git",
+                "reference": "9d0a2f6daea6fb42376b023e7778294d19edd85d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/i18n-module/zipball/9d0a2f6daea6fb42376b023e7778294d19edd85d",
+                "reference": "9d0a2f6daea6fb42376b023e7778294d19edd85d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-master",
+                "yoast/yoastcs": "^1.2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                }
+            ],
+            "description": "Handle i18n for WordPress plugins.",
+            "homepage": "https://github.com/Yoast/i18n-module",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2019-05-07T06:45:05+00:00"
+        },
+        {
+            "name": "yoast/wordpress-seo",
+            "version": "16.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast-dist/wordpress-seo.git",
+                "reference": "3ccb19b47b77e58a65b6f66dbbda0499e548c76e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/3ccb19b47b77e58a65b6f66dbbda0499e548c76e",
+                "reference": "3ccb19b47b77e58a65b6f66dbbda0499e548c76e",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.9.0",
+                "php": "^5.6.20||^7.0",
+                "yoast/i18n-module": "^3.1.1"
+            },
+            "require-dev": {
+                "humbug/php-scoper": "^0.13.4",
+                "league/oauth2-client": "2.4.1",
+                "php-parallel-lint/php-console-highlighter": "^0.5",
+                "php-parallel-lint/php-parallel-lint": "^1.2.0",
+                "phpunit/phpunit": "^5.7",
+                "psr/container": "1.0.0",
+                "psr/log": "^1.0",
+                "symfony/config": "^3.4",
+                "symfony/dependency-injection": "^3.4",
+                "yoast/php-development-environment": "^1.0",
+                "yoast/wp-test-utils": "^0.2.1",
+                "yoast/yoastcs": "^2.1.0"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "classmap": [
+                    "admin/",
+                    "inc/",
+                    "vendor_prefixed/",
+                    "src/",
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoa.st/1--"
+                }
+            ],
+            "description": "Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.",
+            "homepage": "https://yoa.st/1ui",
+            "keywords": [
+                "seo",
+                "wordpress"
+            ],
+            "time": "2021-03-18T11:58:19+00:00"
         }
     ],
     "packages-dev": [
