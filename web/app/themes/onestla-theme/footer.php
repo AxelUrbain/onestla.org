@@ -71,7 +71,8 @@
                 <!-- Facebook -->
                 <a
                     class="btn btn-link btn-floating btn-lg text-white"
-                    href="#!"
+                    href="https://facebook.com/OnestlaNA"
+                    target="_blank"
                     role="button"
                     data-mdb-ripple-color="white"
                     ><i class="bi bi-facebook"></i
@@ -80,7 +81,8 @@
                 <!-- Twitter -->
                 <a
                     class="btn btn-link btn-floating btn-lg text-white"
-                    href="#!"
+                    href="https://twitter.com/OnEstLa_Na"
+                    target="_blank"
                     role="button"
                     data-mdb-ripple-color="white"
                     ><i class="bi bi-twitter"></i
@@ -89,7 +91,8 @@
                 <!-- Instagram -->
                 <a
                     class="btn btn-link btn-floating btn-lg text-white"
-                    href="#!"
+                    href="https://www.instagram.com/onestla_na/"
+                    target="_blank"
                     role="button"
                     data-mdb-ripple-color="white"
                     ><i class="bi bi-instagram"></i

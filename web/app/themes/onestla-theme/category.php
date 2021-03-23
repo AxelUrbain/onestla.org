@@ -8,7 +8,7 @@
 
 <body <?php body_class(); ?>>
 
-<div id="pres-blog" style="background-image: linear-gradient(rgba(31,53,86, 0.75), rgba(31,53,86,0.5)), url();">
+<div id="pres-blog" style="background-image: linear-gradient(rgba(31,53,86, 0.75), rgba(31,53,86,0.5)), url(<?php the_post_thumbnail_url('post-page-pres'); ?>);">
     <div id="header-banner">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
