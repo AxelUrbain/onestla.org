@@ -263,6 +263,15 @@ function func_export_all_signataires() {
 add_action( 'init', 'func_export_all_signataires' );
 
 
+/**
+ * Page wp-admin
+ */
+add_filter('edit_signataire_per_page', 'se337791_signataire_posts_per_page');
+function se337791_signataire_posts_per_page( $posts_per_page )
+{
+    return 20;
+}
+
 function treatment_form_add_signature() {
 
 	if (isset($_POST['signature-send'])){
