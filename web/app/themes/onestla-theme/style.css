@@ -558,6 +558,7 @@ footer p{
     }
 
     .title-page mark{
+        padding-top: 20px;
         background-color: #ca564e;
         color: #FFFFFF;
         text-align: center;
