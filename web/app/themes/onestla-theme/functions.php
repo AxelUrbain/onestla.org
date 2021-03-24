@@ -7,8 +7,6 @@ function onestla_supports()
     add_theme_support('menus');
 
     add_theme_support( 'custom-logo', array(
-        'height'      => 150,
-        'width'       => 350,
         'flex-height' => true,
         'flex-width'  => true,
         'header-text' => array( 'site-title', 'site-description' ),
