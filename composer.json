@@ -44,7 +44,8 @@
     "wpackagist-plugin/cookie-notice": "^2.0",
     "yoast/wordpress-seo": "^16.0",
     "wpackagist-plugin/wordfence": "^7.4",
-    "wpackagist-plugin/wp-maintenance-mode": "^2.3"
+    "wpackagist-plugin/wp-maintenance-mode": "^2.3",
+    "wpackagist-plugin/really-simple-ssl": "^4.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.8",

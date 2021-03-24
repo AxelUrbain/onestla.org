@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "440fd7aa373a5c723535afe5dd939978",
+    "content-hash": "d8f32601704480d5e6d172fcb2f3cc1b",
     "packages": [
         {
             "name": "composer/installers",
@@ -837,6 +837,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/cookie-notice/"
+        },
+        {
+            "name": "wpackagist-plugin/really-simple-ssl",
+            "version": "4.0.12",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/really-simple-ssl/",
+                "reference": "tags/4.0.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.4.0.12.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/really-simple-ssl/"
         },
         {
             "name": "wpackagist-plugin/wordfence",
