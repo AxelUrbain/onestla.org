@@ -145,7 +145,7 @@ MENU
 }
 
 .subtitle-site mark{
-    color: #c62253;
+    color: #ca564e;
     background-color: #FFFFFF;
 }
 
@@ -163,7 +163,7 @@ MENU
 }
 
 .card-signature{
-    background-color: #c62253;
+    background-color: #ca564e;
     width: auto;
     height: auto;
 }
@@ -263,7 +263,7 @@ MENU
     color: #FFFFFF;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    background-color: #c62253;
+    background-color: #ca564e;
 }
 
 /* padding */
@@ -478,14 +478,14 @@ Paginate style
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    border-color: #c62253;
-    background-color: #c62253;
+    border-color: #ca564e;
+    background-color: #ca564e;
 }
 
 .page-link {
     position: relative;
     display: block;
-    color: #c62253;
+    color: #ca564e;
     text-decoration: none;
     background-color: #fff;
     border: 1px solid #dee2e6;
@@ -493,7 +493,7 @@ Paginate style
 }
 
 .page-link:hover{
-    color: #c62253;
+    color: #ca564e;
 }
 
 .page-item:last-child .page-link {
@@ -512,7 +512,7 @@ Footer
 
 
 footer{
-    background-color:  #c62253;
+    background-color:  #ca564e;
 }
 
 footer p{
@@ -558,7 +558,7 @@ footer p{
     }
 
     .title-page mark{
-        background-color: #c62253;
+        background-color: #ca564e;
         color: #FFFFFF;
         text-align: center;
     }
