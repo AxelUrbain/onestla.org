@@ -5,7 +5,7 @@
         <?php else: ?>
             <h2 class="title-signature-section">Participez à la campagne</h2>
         <?php endif; ?>
-        <p class="number-signature">Nous sommes déjà <?= wp_count_posts('signataire')->publish + 1240; ?> à soutenir la liste</p>
+        <p class="number-signature">Nous sommes déjà <?= wp_count_posts('signataire')->publish + 740; ?> à soutenir la liste</p>
 
         <div id="form-signature">
             <form action="<?php treatment_form_add_signature(); ?>" method="post">
