@@ -42,22 +42,42 @@
             </div>
         </nav>        
     </div>
+    
+    <?php
+        $current_page = get_permalink();
+    ?>
 
+    <?php if(!str_contains($current_page, 'event') && !str_contains($current_page, 'events')): ?>
+        <div class="container">
+            <div class="p-60">
+                <div class="row">
+                    <h2 class="text-left title-page">
+                        <mark><?php echo the_title(); ?></mark>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
+
+</div>
+
+<?php if(!str_contains($current_page, 'event') && !str_contains($current_page, 'events')): ?>
+    <div class="linear-background">
+        <div id="img-soutiens">
+        </div>
+    </div>
+<?php endif; ?>
+
+<?php if(str_contains($current_page, 'event') || str_contains($current_page, 'events')): ?>
     <div class="container">
-        <div class="p-60">
+        <div class="p-actu-page">   
             <div class="row">
                 <h2 class="text-left title-page">
-                    <mark><?php echo the_title(); ?></mark>
+                    <mark>Agenda</mark>
                 </h2>
             </div>
         </div>
     </div>
-</div>
-
-<div class="linear-background">
-    <div id="img-soutiens">
-    </div>
-</div>
-
+<?php endif; ?>
 
 <?php wp_body_open(); ?>
