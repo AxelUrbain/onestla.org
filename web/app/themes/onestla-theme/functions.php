@@ -113,7 +113,7 @@ function signataire_cpt() {
 		'labels'              => $labels,
 		'supports'            => array('custom-fields'),
 		'hierarchical'        => false,
-		'public'              => false,
+		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
 		'menu_position'       => 4,
