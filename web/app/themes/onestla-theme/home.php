@@ -95,6 +95,7 @@
                 </div>
             </div>
         </div>
+    </div>
     <?php endwhile;?>
         <div class="container">
             <div class="content-article-page">
@@ -103,7 +104,6 @@
         </div>
     <?php else: ?>
         <p>Aucun article :(</p>
-    </div>
     <?php endif; ?>
 </div>
 
